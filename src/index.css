@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Geist:wght@100..900&display=swap');
+
+:root {
+  --bg-primary: #fdf8f4;
+  /* Dribbble Beige */
+  --bg-secondary: #FFFFFF;
+  --accent: #ff6400;
+  /* Dribbble Orange */
+  --accent-hover: #e55a00;
+  --text-primary: #0F172A;
+  /* Darker Slate for better readability */
+  --text-secondary: #475569;
+  /* Medium Slate */
+  --border-light: #eaddd3;
+  --font-heading: 'Rethink Sans', sans-serif;
+  --font-body: 'Geist', sans-serif;
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bg-blob {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 107, 53, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(60px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.blob-1 {
+  top: 10%;
+  left: -10%;
+}
+
+.blob-2 {
+  bottom: 10%;
+  right: -10%;
+  background: radial-gradient(circle, rgba(162, 155, 254, 0.08) 0%, transparent 70%);
+}
+
+.blob-3 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+}
+
+.section-pattern {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-pattern::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+  background-size: 30px 30px;
+  z-index: -2;
+  pointer-events: none;
+}
+
+
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10000;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  transition: var(--transition);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+/* Common Components */
+.btn-primary {
+  background-color: var(--accent);
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 10px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  box-shadow: 0 6px 15px rgba(255, 107, 53, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3);
+}
+
+
+.btn-secondary {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+.badge {
+  background-color: #FFF2ED;
+  color: var(--accent);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #FF7EB3 0%, #A29BFE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glassmorphism Effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.55) !important;
+  backdrop-filter: blur(12px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.45) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.03) !important;
+}
+
+.glass-effect:hover {
+  background: rgba(255, 255, 255, 0.7) !important;
+  border-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+
+
+
+
+
+.section-padding {
+  padding: 60px 0;
+}
