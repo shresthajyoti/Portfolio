@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linkedin, Facebook, Github, Mail, Phone, MapPin } from 'lucide-react';
+import { Linkedin, Github, Mail, Phone, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -16,12 +16,10 @@ const Footer = () => {
                             Innovative Full-Stack Developer dedicated to building high-performance web solutions and exceptional user experiences.
                         </p>
                         <div className="social-links">
-                            <a href="https://linkedin.com/in/shresthajyoti" target="_blank" rel="noreferrer" className="social-link">
+                            <a href="https://www.linkedin.com/in/jyoti-shrestha-6234862b2/" target="_blank" rel="noreferrer" className="social-link">
                                 <Linkedin size={20} />
                             </a>
-                            <a href="https://facebook.com/shresthajyoti" target="_blank" rel="noreferrer" className="social-link">
-                                <Facebook size={20} />
-                            </a>
+
                             <a href="https://github.com/shresthajyoti" target="_blank" rel="noreferrer" className="social-link">
                                 <Github size={20} />
                             </a>
@@ -48,11 +46,11 @@ const Footer = () => {
                             </li>
                             <li>
                                 <Phone size={18} className="text-accent" />
-                                <span>+1 (555) 000-0000</span>
+                                <span>+977 98000000</span>
                             </li>
                             <li>
                                 <MapPin size={18} className="text-accent" />
-                                <span>San Francisco, CA</span>
+                                <span>Kathandu, nepal</span>
                             </li>
                         </ul>
                     </div>

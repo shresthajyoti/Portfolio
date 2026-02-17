@@ -105,7 +105,7 @@ const Hero = () => {
                 </h1>
 
                 <p className="hero-description-dribbble">
-                    2 years of practical experience high-performance web applications
+                    Years of practical experience high-performance web applications
                     <br />
                     and desktop solutions, I bring expertise and creativity to every project.
                 </p>
