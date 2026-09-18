@@ -30,15 +30,7 @@ const ContactPage = () => {
                                 <p>jyotishrestha097@gmail.com</p>
                             </div>
                         </div>
-                        <div className="contact-info-card gsap-reveal">
-                            <div className="card-icon-round">
-                                <Phone className="text-accent" size={24} />
-                            </div>
-                            <div>
-                                <h4>Call Me</h4>
-                                <p>000-000-0000</p>
-                            </div>
-                        </div>
+                
                         <div className="contact-info-card gsap-reveal">
                             <div className="card-icon-round">
                                 <MapPin className="text-accent" size={24} />

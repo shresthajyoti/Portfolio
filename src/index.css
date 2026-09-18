@@ -235,3 +235,28 @@ button {
 .section-padding {
   padding: 60px 0;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .section-padding {
+    padding: 45px 0;
+  }
+
+  .glass-effect {
+    backdrop-filter: blur(8px) saturate(160%) !important;
+    -webkit-backdrop-filter: blur(8px) saturate(160%) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .section-padding {
+    padding: 35px 0;
+  }
+}

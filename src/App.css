@@ -1997,3 +1997,429 @@ body {
   border-radius: 50%;
   margin: 4px auto 0;
 }
+
+/* ==========================================================================
+   Comprehensive Mobile & Tablet Responsiveness Enhancements
+   ========================================================================== */
+
+@media (max-width: 968px) {
+  .nav-container-mock {
+    padding: 0 1.25rem;
+  }
+
+  .nav-socials {
+    display: none;
+  }
+
+  .stats-grid-split {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .stats-image-container {
+    justify-content: center;
+  }
+
+  .skills-bento-grid-mock {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .responsive-web,
+  .high-quality {
+    grid-column: span 1;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-cta-box {
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .contact-cta-image {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Navigation Mobile Refinement */
+  .navbar-mock {
+    padding: 1rem 0;
+  }
+
+  .btn-hire-mock {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  /* Hero Mobile Refinement */
+  .hero-dribbble {
+    padding: 7.5rem 1.25rem 3.5rem;
+    min-height: auto;
+  }
+
+  .profile-circle-bordered {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 1.8rem;
+    padding: 4px;
+  }
+
+  .greeting-dribbble {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-title-dribbble {
+    font-size: clamp(2rem, 8vw, 3.2rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .title-box {
+    padding: 0.2rem 1rem;
+    font-size: 0.85em;
+    margin: 0.3rem 0;
+    white-space: normal;
+    word-break: break-word;
+    border-width: 1.5px;
+    box-shadow: 0 2px 8px rgba(196, 125, 79, 0.1);
+  }
+
+  .hero-description-dribbble {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+  }
+
+  .btn-explore-dribbble {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+    padding: 0.75rem 0.8rem 0.75rem 1.6rem;
+    font-size: 0.95rem;
+  }
+
+  .sunburst {
+    width: 80px;
+    height: 80px;
+    opacity: 0.35;
+  }
+
+  .sunburst-top-right {
+    top: 6%;
+    right: 3%;
+  }
+
+  .sunburst-bottom-left {
+    bottom: 4%;
+    left: 2%;
+  }
+
+  .arches-bg {
+    display: none;
+  }
+
+  .scrolling-banner {
+    margin-top: 2.5rem;
+    padding: 1.2rem 0;
+  }
+
+  .marquee span {
+    font-size: 1.1rem;
+    margin-right: 3rem;
+  }
+
+  /* Section Header Mobile */
+  .section-header {
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+    margin-bottom: 0.8rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* Stats Section Mobile */
+  .stats-dashed-box {
+    padding: 2.5rem 1.25rem;
+    border-radius: 24px;
+  }
+
+  .metrics-grid-2x2 {
+    gap: 1.8rem 1rem;
+  }
+
+  .stat-value {
+    font-size: 2.2rem;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+  }
+
+  .stats-image-box {
+    width: 100%;
+    max-width: 260px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  /* Projects Mobile Grid */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    margin-top: 2.5rem;
+  }
+
+  .project-card {
+    border-radius: 20px;
+  }
+
+  .project-image-container {
+    height: 200px;
+  }
+
+  .project-card-content {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .project-title {
+    font-size: 1.4rem;
+  }
+
+  .project-desc {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-btn-rect {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Bento Cards Mobile */
+  .bento-card-mock {
+    padding: 1.5rem 1.25rem;
+    border-radius: 18px;
+  }
+
+  .card-title-mock {
+    font-size: 1.35rem;
+  }
+
+  .tech-pills-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+  }
+
+  .tech-pill-logo {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .visual-icon-grey,
+  .card-visual-bottom {
+    display: none;
+  }
+
+  /* Process Cards Mobile */
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+
+  .process-icon-box {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1.2rem;
+    border-radius: 16px;
+  }
+
+  .process-card-title {
+    font-size: 1.15rem;
+  }
+
+  /* Contact CTA Mobile */
+  .contact-cta-box {
+    padding: 2.5rem 1.25rem;
+    border-radius: 24px;
+  }
+
+  .contact-cta-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-cta-desc {
+    font-size: 0.95rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .contact-cta-btns {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+  }
+
+  .btn-primary-rect,
+  .btn-secondary-rect {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 0.9rem 1.5rem;
+  }
+
+  /* Contact Page Mobile */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .contact-info-card {
+    padding: 1.25rem;
+    border-radius: 16px;
+  }
+
+  .contact-form {
+    padding: 1.8rem 1.25rem;
+    border-radius: 20px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 16px;
+    padding: 0.85rem 1.2rem;
+  }
+
+  /* About Page Mobile */
+  .about-content-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-headline {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+
+  .about-features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  .experience-badge {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin: -25px auto 0;
+    max-width: 220px;
+    padding: 1.2rem 1.5rem;
+    border-radius: 20px;
+  }
+
+  .experience-badge h3 {
+    font-size: 2rem;
+  }
+
+  .timeline {
+    padding-left: 1.8rem;
+  }
+
+  .timeline-item {
+    padding-left: 1.8rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .timeline-icon-box {
+    left: -16px;
+    width: 32px;
+    height: 32px;
+  }
+
+  /* Work Filters Mobile */
+  .work-filters {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .filter-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+    flex: 1;
+    min-width: 100px;
+    text-align: center;
+  }
+
+  /* Footer Mobile */
+  .footer {
+    padding: 45px 0 25px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .footer-brand .logo {
+    justify-content: center;
+  }
+
+  .footer-bio {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-contact ul li {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title-dribbble {
+    font-size: 2.1rem;
+  }
+
+  .metrics-grid-2x2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 0.8rem;
+  }
+
+  .tech-pills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-hire-mock {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.8rem;
+  }
+}
