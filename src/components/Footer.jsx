@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linkedin, Github, Mail, Phone, MapPin } from 'lucide-react';
+import { Linkedin, Github, Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -43,10 +43,6 @@ const Footer = () => {
                             <li>
                                 <Mail size={18} className="text-accent" />
                                 <span>hello@jyotistha.com</span>
-                            </li>
-                            <li>
-                                <Phone size={18} className="text-accent" />
-                                <span>+977 98000000</span>
                             </li>
                             <li>
                                 <MapPin size={18} className="text-accent" />
