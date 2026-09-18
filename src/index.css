@@ -1,21 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Geist:wght@100..900&display=swap');
 
 :root {
-  --bg-primary: #fdf8f4;
-  /* Dribbble Beige */
+  --bg-primary: #FAF6EE;
+  /* Soft warm cream / ivory alabaster */
   --bg-secondary: #FFFFFF;
-  --accent: #ff6400;
-  /* Dribbble Orange */
-  --accent-hover: #e55a00;
-  --text-primary: #0F172A;
-  /* Darker Slate for better readability */
-  --text-secondary: #475569;
-  /* Medium Slate */
-  --border-light: #eaddd3;
+  /* Pristine white */
+  --accent: #C47D4F;
+  /* Warm terracotta caramel chestnut */
+  --accent-hover: #A65E33;
+  /* Rich warm chestnut hover */
+  --text-primary: #1E1B18;
+  /* Deep warm charcoal stone */
+  --text-secondary: #6E675F;
+  /* Soft warm taupe slate */
+  --border-light: #E8E0D2;
+  /* Delicate warm cream border */
   --font-heading: 'Rethink Sans', sans-serif;
   --font-body: 'Geist', sans-serif;
-  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-sm: 0 4px 12px rgba(30, 27, 24, 0.04);
+  --shadow-md: 0 10px 25px rgba(30, 27, 24, 0.07);
   --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -23,7 +26,7 @@
   position: absolute;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(255, 107, 53, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(196, 125, 79, 0.09) 0%, transparent 70%);
   border-radius: 50%;
   filter: blur(60px);
   z-index: -1;
@@ -38,14 +41,15 @@
 .blob-2 {
   bottom: 10%;
   right: -10%;
-  background: radial-gradient(circle, rgba(162, 155, 254, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(212, 163, 115, 0.12) 0%, transparent 70%);
 }
 
 .blob-3 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.5;
+  opacity: 0.6;
+  background: radial-gradient(circle, rgba(230, 215, 195, 0.2) 0%, transparent 70%);
 }
 
 .section-pattern {
@@ -161,13 +165,13 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  box-shadow: 0 6px 15px rgba(255, 107, 53, 0.2);
+  box-shadow: 0 6px 18px rgba(196, 125, 79, 0.25);
 }
 
 .btn-primary:hover {
   background-color: var(--accent-hover);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 8px 22px rgba(196, 125, 79, 0.35);
 }
 
 
@@ -187,7 +191,7 @@ button {
 }
 
 .badge {
-  background-color: #FFF2ED;
+  background-color: #F5EDE2;
   color: var(--accent);
   padding: 0.5rem 1rem;
   border-radius: 50px;
@@ -195,6 +199,7 @@ button {
   font-weight: 600;
   display: inline-block;
   margin-bottom: 1rem;
+  border: 1px solid #E8E0D2;
 }
 
 .text-accent {
@@ -202,7 +207,7 @@ button {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #FF7EB3 0%, #A29BFE 100%);
+  background: linear-gradient(135deg, #C47D4F 0%, #8C5E3C 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -210,16 +215,16 @@ button {
 
 /* Glassmorphism Effect */
 .glass-effect {
-  background: rgba(255, 255, 255, 0.55) !important;
-  backdrop-filter: blur(12px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.45) !important;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.03) !important;
+  background: rgba(255, 255, 255, 0.82) !important;
+  backdrop-filter: blur(14px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(180%) !important;
+  border: 1px solid rgba(232, 224, 210, 0.8) !important;
+  box-shadow: 0 8px 32px 0 rgba(30, 27, 24, 0.04) !important;
 }
 
 .glass-effect:hover {
-  background: rgba(255, 255, 255, 0.7) !important;
-  border-color: rgba(255, 255, 255, 0.6) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-color: var(--accent) !important;
 }
 
 

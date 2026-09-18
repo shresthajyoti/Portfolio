@@ -4,7 +4,7 @@ import Process from '../components/Process';
 
 const Work = () => {
     const [selectedCategory, setSelectedCategory] = useState('All');
-    const categories = ['All', 'Web App', 'Mobile', 'Design'];
+    const categories = ['All', 'Web App', 'Mobile'];
 
     return (
         <div className="work-page pt-20 section-pattern">
