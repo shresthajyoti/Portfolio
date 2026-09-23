@@ -116,8 +116,8 @@ const AboutPage = () => {
                         <div className="about-image-wrapper">
                             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop" alt="Profile" className="about-img" />
                             <div className="experience-badge">
-                                <h3>5+</h3>
-                                <p>Years of Engineering</p>
+                                <h3>2+</h3>
+                                <p>Years of Developping</p>
                             </div>
                         </div>
                     </div>
